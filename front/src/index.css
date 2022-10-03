@@ -1,0 +1,223 @@
+body {
+  margin: 0;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+/* Header */
+.global-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+}
+.global-header img {
+  max-width: 100%;
+  width: 200px;
+}
+.signIn {
+  font-weight: bold;
+  color: #2c3e50;
+  cursor: pointer;
+}
+.log-container {
+  display: flex;
+  gap: 10px;
+}
+
+/* Banner Home */
+.banner-home {
+  background-position: 0 -50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  position: relative;
+}
+.banner-text {
+  position: relative;
+  top: 2rem;
+  width: 200px;
+  background: white;
+  padding: 2rem;
+  text-align: left;
+  margin: 0 auto;
+}
+.sub-title {
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Feature Section */
+.features {
+  display: flex;
+  flex-direction: column;
+}
+.feature-item {
+  flex: 1;
+  padding: 2.5rem;
+}
+.feature-item img {
+  width: 100px;
+  border: 10px solid #00bc77;
+  border-radius: 50%;
+  padding: 1rem;
+}
+.feature-item-title {
+  color: #222;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid #ccc;
+  padding: 2rem 0 1.5rem;
+}
+.footer-text {
+  margin: 0;
+  padding: 0;
+}
+
+/* Sign In */
+.background-dark {
+  background-color: rgb(18, 0, 43);
+  height: 80vh;
+  padding-top: 40px;
+}
+.sign-in-content {
+  box-sizing: border-box;
+  background-color: white;
+  width: 300px;
+  margin: 0rem auto 0px;
+  padding: 2rem;
+}
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.input-wrapper label {
+  font-weight: bold;
+}
+.input-wrapper input {
+  font-size: 1.2rem;
+  padding: 5px;
+}
+.input-remember {
+  display: flex;
+}
+.input-remember label {
+  margin-left: 0.25rem;
+}
+.sign-in-button {
+  display: block;
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  background-color: rgb(0, 188, 119);
+  color: rgb(255, 255, 255);
+  padding: 8px;
+  border-color: rgb(0, 188, 119);
+}
+
+/* User pages */
+.main-title {
+  color: rgb(255, 255, 255);
+  margin-bottom: 2rem;
+}
+.main-title p {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+.edit-button {
+  background-color: rgb(0, 188, 119);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  border-color: rgb(0, 188, 119);
+  padding: 10px;
+  margin-bottom: 2rem;
+}
+.account {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  width: 80%;
+
+  box-sizing: border-box;
+  text-align: left;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  border-image: initial;
+  margin: 0px auto 2rem;
+  padding: 1.5rem;
+}
+.account-container {
+  width: 100%;
+  flex: 1 1 0%;
+}
+.account-title {
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 0px;
+  padding: 0px;
+}
+.account-amount {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0px;
+}
+.amount-description {
+  margin: 0px;
+}
+.transaction-button {
+  display: block;
+  width: 200px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  background-color: rgb(0, 188, 119);
+  color: rgb(255, 255, 255);
+  padding: 8px;
+  border-color: rgb(0, 188, 119);
+}
+
+/* Change Name Form */
+.edit-name {
+  display: none;
+}
+
+.button-name {
+  border: #b3b3f0 solid 2px;
+  color: #6458f5;
+  background-color: white;
+  border-radius: 3px;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  padding: 4px 20px;
+  margin-left: 8px;
+  margin-top: 10px;
+}
+.input-name {
+  border: #bcc7d2 solid 2px;
+  border-radius: 3px;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  padding: 4px 10px;
+  margin-right: 8px;
+}
