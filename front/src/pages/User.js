@@ -80,6 +80,22 @@ const User = () => {
     document.querySelector('.main-title p').style.color = 'white';
   }
 
+  const argent = {
+    title: 'Argent Bank Checking (x8349)',
+    amount: '$2,082.79',
+    balance: 'Available Balance',
+  };
+  const savings = {
+    title: 'Argent Bank Savings (x6712)',
+    amount: '$10,928.42',
+    balance: 'Available Balance',
+  };
+  const credit = {
+    title: 'Argent Bank Credit Card (x8349)',
+    amount: '$184.30',
+    balance: 'Current Balance',
+  };
+
   return (
     <main className="background-dark">
       <div className="main-title">
@@ -109,9 +125,9 @@ const User = () => {
           </button>
         </form>
       </div>
-      <Account />
-      <Account />
-      <Account />
+      <Account {...argent} />
+      <Account {...savings} />
+      <Account {...credit} />
     </main>
   );
 };

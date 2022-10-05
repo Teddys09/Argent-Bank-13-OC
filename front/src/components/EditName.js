@@ -1,10 +1,6 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
 
 const EditName = () => {
-  const user = useSelector((state) => state.user.value);
-  console.log(user);
-
   function editForm() {
     const h1 = document.querySelector('.main-title h1');
     h1.style.color = '#283845';

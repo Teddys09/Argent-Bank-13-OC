@@ -72,6 +72,11 @@ body {
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
+@media screen and (min-width: 950px) {
+  .features {
+    flex-direction: row;
+  }
+}
 
 /* Footer */
 .footer {
@@ -220,4 +225,11 @@ body {
   font-weight: 500;
   padding: 4px 10px;
   margin-right: 8px;
+}
+
+/* Error container */
+.error-container {
+  font-size: 40px;
+  align-items: center;
+  color: red;
 }

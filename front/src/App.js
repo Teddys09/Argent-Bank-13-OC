@@ -6,6 +6,7 @@ import SignIn from './pages/SignIn';
 import User from './pages/User';
 import { Provider } from 'react-redux';
 import { store } from './utils/store';
+import Error from './pages/Error';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/sign-in" element={<SignIn />} />
           <Route path="/user" element={<User />} />
+          <Route path="*" element={<Error />} />
         </Routes>
         <Footer />
       </Router>
