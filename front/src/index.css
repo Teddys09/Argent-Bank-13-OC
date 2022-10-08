@@ -45,6 +45,13 @@ body {
   text-align: left;
   margin: 0 auto;
 }
+@media (min-width: 950px) {
+  .banner-text {
+    margin: 0;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+}
 .sub-title {
   font-weight: bold;
   font-size: 1rem;

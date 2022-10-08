@@ -27,7 +27,7 @@ const User = () => {
 
       .catch((err) => {
         console.log(err);
-        navigate('/error');
+        navigate('/sign-in');
       });
   }, [dispatch, user.token, user.firstName, user.lastName, navigate]);
 
