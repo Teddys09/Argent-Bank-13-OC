@@ -4,10 +4,12 @@ import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux';
 import { firstName, lastName } from '../utils/store';
 import EditName from '../components/EditName';
+import { useNavigate } from 'react-router-dom';
 
 const User = () => {
   const user = useSelector((state) => state.user.value);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   useEffect(() => {
     axios({
@@ -25,8 +27,9 @@ const User = () => {
 
       .catch((err) => {
         console.log(err);
+        navigate('/error');
       });
-  }, [dispatch, user.token, user.firstName, user.lastName]);
+  }, [dispatch, user.token, user.firstName, user.lastName, navigate]);
 
   function cancelForm(e) {
     e.preventDefault();
